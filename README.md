@@ -1,9 +1,15 @@
 Description
 ===========
 
-baseboxes build with packer for use with vagrant.
-This repository includes the packer templates to build the basebox.
-The build boxes are available through [Google Drive](https://googledrive.com/host/0B83ZToJ3fGtDWkZET3FnZ0xzQkE) and [Vagrantcloud](https://www.vagrantcloud.com/ffuenf).
+Baseboxes build with packer for use with vagrant.
+
+This repository includes a packer template to build the following baseboxes:
+
+* Debian Wheezy 7.5.0 x86_64.
+* Ubuntu Trusty Tahr 14.04 Server x86_64.
+
+If you are looking for more packer templates, please have look at the original project:
+[https://github.com/ffuenf/vagrant-boxes](https://github.com/ffuenf/vagrant-boxes)
 
 Requirements
 ============
@@ -11,125 +17,15 @@ Requirements
 * [vagrant](http://vagrantup.com)
 * [packer](http://packer.io)
 * [virtualbox](https://www.virtualbox.org/)
-* [VMware Fusion](http://www.vmware.com/de/products/fusion/)
-
-Boxes
-=====
-
-[SHA512 Checksums](https://googledrive.com/host/0B83ZToJ3fGtDWkZET3FnZ0xzQkE/SHA512SUMS)
-
-### Ubuntu
-#### Ubuntu Trusty Tahr 14.x
-##### Ubuntu Trusty Tahr 14.04 Server x86_64 ([ffuenf/ubuntu-14.04-server-amd64](https://www.vagrantcloud.com/ffuenf/ubuntu-14.04-server-amd64) / [ubuntu-14.04-server-amd64_vmware.box](https://googledrive.com/host/0B83ZToJ3fGtDMFFNbnFsVjVKVmc/ubuntu-14.04-server-amd64_vmware.box))
-* VMware Tools 9.6.2
-* Chef 11.12.2-1
-* Ruby 1.9.3.484-2
-* Rubygems 2.2.2
-
-##### Ubuntu Trusty Tahr 14.04 Server x86_64 ([ffuenf/ubuntu-14.04-server-amd64](https://www.vagrantcloud.com/ffuenf/ubuntu-14.04-server-amd64) / [ubuntu-14.04-server-amd64_virtualbox.box](https://googledrive.com/host/0B83ZToJ3fGtDMFFNbnFsVjVKVmc/ubuntu-14.04-server-amd64_virtualbox.box))
-* VirtualBox Guest Additions 4.3.10
-* Chef 11.12.2-1
-* Ruby 1.9.3.484-2
-* Rubygems 2.2.2
-
-#### Ubuntu Saucy Salamander 13.1x
-##### Ubuntu Saucy Salamander 13.10 Server x86_64 ([ffuenf/ubuntu-13.10-server-amd64](https://www.vagrantcloud.com/ffuenf/ubuntu-13.10-server-amd64) / [ubuntu-13.10-server-amd64_vmware.box](https://googledrive.com/host/0B83ZToJ3fGtDcVBKLU1HNTR1bXc/ubuntu-13.10-server-amd64_vmware.box))
-* VMware Tools 9.6.2
-* Chef 11.12.2-1
-* Ruby 1.9.3.194-8.1ubuntu2.1
-* Rubygems 2.2.2
-
-##### Ubuntu Saucy Salamander 13.10 Server x86_64 ([ffuenf/ubuntu-13.10-server-amd64](https://www.vagrantcloud.com/ffuenf/ubuntu-13.10-server-amd64) / [ubuntu-13.10-server-amd64_virtualbox.box](https://googledrive.com/host/0B83ZToJ3fGtDcVBKLU1HNTR1bXc/ubuntu-13.10-server-amd64_virtualbox.box))
-* VirtualBox Guest Additions 4.3.10
-* Chef 11.12.2-1
-* Ruby 1.9.3.194-8.1ubuntu2.1
-* Rubygems 2.2.2
-
-#### Ubuntu Raring Ringtail 13.x (DEPRECIATED!)
-##### Ubuntu Raring Ringtail 13.04 Server x86_64 (DEPRECIATED!) ([ffuenf/ubuntu-13.04-server-amd64](https://www.vagrantcloud.com/ffuenf/ubuntu-13.04-server-amd64) / [ubuntu-13.04-server-amd64_vmware.box](https://googledrive.com/host/0B83ZToJ3fGtDMHNUc25jZkR2OWc/ubuntu-13.04-server-amd64_vmware.box))
-* VMware Tools 9.6.1
-* Chef 11.12.2-1
-* Ruby 1.9.3.194
-* Rubygems 2.2.2
-
-##### Ubuntu Raring Ringtail 13.04 Server x86_64 (DEPRECIATED!) ([ffuenf/ubuntu-13.04-server-amd64](https://www.vagrantcloud.com/ffuenf/ubuntu-13.04-server-amd64) / [ubuntu-13.04-server-amd64_virtualbox.box](https://googledrive.com/host/0B83ZToJ3fGtDMHNUc25jZkR2OWc/ubuntu-13.04-server-amd64_virtualbox.box))
-* VirtualBox Guest Additions 4.3.10
-* Chef 11.12.2-1
-* Ruby 1.9.3.194
-* Rubygems 2.2.2
-
----
-
-#### Ubuntu Precise Pangolin 12.x (DEPRECIATED!)
-##### Ubuntu Precise Pangolin 12.04.4 LTS Server x86_64 (DEPRECIATED!)
-([ffuenf/ubuntu-12.04.4-server-amd64](https://www.vagrantcloud.com/ffuenf/ubuntu-12.04.4-server-amd64) / [ubuntu-13.04-server-amd64_vmware.box](https://googledrive.com/host/0B83ZToJ3fGtDYng0RGV1NkZSNU0/ubuntu-12.04.4-server-amd64_vmware.box))
-* VMware Tools 9.6.1
-* Chef 11.12.2-1
-* Ruby 1.9.3.0
-* Rubygems 2.2.2
-
-##### Ubuntu Precise Pangolin 12.04.4 LTS Server x86_64 (DEPRECIATED!)
-([ffuenf/ubuntu-12.04.4-server-amd64](https://www.vagrantcloud.com/ffuenf/ubuntu-12.04.4-server-amd64) / [ubuntu-13.04-server-amd64_virtualbox.box](https://googledrive.com/host/0B83ZToJ3fGtDYng0RGV1NkZSNU0/ubuntu-12.04.4-server-amd64_virtualbox.box))
-* VirtualBox Guest Additions 4.3.10
-* Chef 11.12.2-1
-* Ruby 1.9.3.0
-* Rubygems 2.2.2
-
----
-
-### Debian
-#### Debian Wheezy 7.x
-
-##### Debian Wheezy 7.5.0 x86_64 ([ffuenf/debian-7.5.0-amd64](https://www.vagrantcloud.com/ffuenf/debian-7.5.0-amd64) / [debian-7.5.0-amd64_vmware.box](https://googledrive.com/host/0B83ZToJ3fGtDVC1DeVVzc3lkc0U/debian-7.5.0-amd64_vmware.box)
-* VMware Tools 9.6.2
-* Chef 11.12.4-1
-* Ruby 1.9.3.194-8.1+deb7u2
-* Rubygems 2.2.2
-
-##### Debian Wheezy 7.5.0 x86_64 ([ffuenf/debian-7.5.0-amd64](https://www.vagrantcloud.com/ffuenf/debian-7.5.0-amd64) / [debian-7.5.0-amd64_virtualbox.box](https://googledrive.com/host/0B83ZToJ3fGtDVC1DeVVzc3lkc0U/debian-7.5.0-amd64_virtualbox.box)
-* VirtualBox Guest Additions 4.3.10
-* Chef 11.12.4-1
-* Ruby 1.9.3.194-8.1+deb7u2
-* Rubygems 2.2.2
-
----
-
-##### Debian Wheezy 7.4.0 x86_64 (DEPRECIATED!) ([ffuenf/debian-7.4.0-amd64](https://www.vagrantcloud.com/ffuenf/debian-7.4.0-amd64) / [debian-7.4.0-amd64_vmware.box](https://googledrive.com/host/0B83ZToJ3fGtDVC1DeVVzc3lkc0U/debian-7.4.0-amd64_vmware.box))
-* VMware Tools 9.6.2
-* Chef 11.12.2-1
-* Ruby 1.9.3.194-8.1+deb7u2
-* Rubygems 2.2.2
-
-##### Debian Wheezy 7.4.0 x86_64 (DEPRECIATED!) ([ffuenf/debian-7.4.0-amd64](https://www.vagrantcloud.com/ffuenf/debian-7.4.0-amd64) / [debian-7.4.0-amd64_virtualbox.box](https://googledrive.com/host/0B83ZToJ3fGtDVC1DeVVzc3lkc0U/debian-7.4.0-amd64_virtualbox.box))
-* VirtualBox Guest Additions 4.3.10
-* Chef 11.12.2-1
-* Ruby 1.9.3.194-8.1+deb7u2
-* Rubygems 2.2.2
-
----
-
-#### Debian Squeeze 6.x
-##### Debian Squeeze 6.0.9 x86_64 ([ffuenf/debian-6.0.9-amd64](https://www.vagrantcloud.com/ffuenf/debian-6.0.9-amd64) / [debian-6.0.9-amd64_vmware.box](https://googledrive.com/host/0B83ZToJ3fGtDeE9KWm1sWndZdGs/debian-6.0.9-amd64_vmware.box))
-* VMware Tools 9.6.2
-* Chef 11.12.4-1
-* Ruby 1.9.2.0-2+deb6u2
-* Rubygems 2.2.2
-
----
-
-##### Debian Squeeze 6.0.9 x86_64
-([ffuenf/debian-6.0.9-amd64](https://www.vagrantcloud.com/ffuenf/debian-6.0.9-amd64) / [debian-6.0.9-amd64_virtualbox.box](https://googledrive.com/host/0B83ZToJ3fGtDeE9KWm1sWndZdGs/debian-6.0.9-amd64_virtualbox.box))
-* VirtualBox Guest Additions 4.3.10
-* Chef 11.12.4-1
-* Ruby 1.9.2.0-2+deb6u2
-* Rubygems 2.2.2
-
----
 
 License and Author
 ==================
 
+This repository is based on the amazing work of
+
 - Author:: Achim Rosenhagen (<a.rosenhagen@ffuenf.de>)
+
+who licenced his original work available under the terms below
 
 - Copyright:: 2014, ffuenf
 
