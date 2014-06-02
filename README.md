@@ -5,8 +5,9 @@ Baseboxes build with packer for use with vagrant.
 
 This repository includes a packer template to build the following baseboxes:
 
-* Debian Wheezy 7.5.0 x86_64.
-* Ubuntu Trusty Tahr 14.04 Server x86_64.
+* Debian Wheezy 7.5.0 x86_64
+* Ubuntu Trusty Tahr 12.04 Server x86_64
+* Ubuntu Trusty Tahr 14.04 Server x86_64
 
 If you are looking for more packer templates, please have look at the original project:
 [https://github.com/ffuenf/vagrant-boxes](https://github.com/ffuenf/vagrant-boxes)
