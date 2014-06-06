@@ -2,15 +2,26 @@
 
 case "$PACKER_BUILDER_TYPE" in 
 
-virtualbox-iso|virtualbox-ovf) 
+virtualbox-iso|virtualbox-ovf)
     mkdir /tmp/vbox
     VER=$(cat /home/vagrant/.vbox_version)
-    mount -o loop /home/vagrant/VBoxGuestAdditions_$VER.iso /tmp/vbox 
+    mount -o loop /home/vagrant/VBoxGuestAdditions_$VER.iso /tmp/vbox
     sh /tmp/vbox/VBoxLinuxAdditions.run
     umount /tmp/vbox
     rmdir /tmp/vbox
     rm /home/vagrant/*.iso
-    ln -s /opt/VBoxGuestAdditions-*/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions
+    ;;
+
+vmware-iso|vmware-ovf)
+    mkdir /tmp/vmfusion
+    mkdir /tmp/vmfusion-archive
+    mount -o loop /home/vagrant/linux.iso /tmp/vmfusion
+    tar xzf /tmp/vmfusion/VMwareTools-*.tar.gz -C /tmp/vmfusion-archive
+    /tmp/vmfusion-archive/vmware-tools-distrib/vmware-install.pl --default
+    umount /tmp/vmfusion
+    rm -rf  /tmp/vmfusion
+    rm -rf  /tmp/vmfusion-archive
+    rm /home/vagrant/*.iso
     ;;
 
 *)

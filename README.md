@@ -18,6 +18,7 @@ Requirements
 * [vagrant](http://vagrantup.com)
 * [packer](http://packer.io)
 * [virtualbox](https://www.virtualbox.org/)
+* [VMware Fusion](http://www.vmware.com/de/products/fusion/)
 
 License and Author
 ==================
