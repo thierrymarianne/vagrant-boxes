@@ -1,7 +1,7 @@
 Description
 ===========
 
-Baseboxes build with packer for use with vagrant.
+Baseboxes built with packer for use with vagrant.
 
 This repository includes a packer template to build the following baseboxes:
 
