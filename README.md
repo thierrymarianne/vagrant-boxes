@@ -25,11 +25,11 @@ License and Author
 
 This repository is based on the amazing work of
 
-- Author:: Achim Rosenhagen (<a.rosenhagen@ffuenf.de>)
+- Achim Rosenhagen (<a.rosenhagen@ffuenf.de>)
 
 who licenced his original work available under the terms below
 
-- Copyright:: 2014, ffuenf
+- Copyright :: 2014, ffuenf
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
